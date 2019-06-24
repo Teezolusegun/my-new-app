@@ -1,4 +1,8 @@
 import React, {Component} from 'react'
+import Header from './Header';
+
+
+
 
 export class Likes extends Component{
     state = {
@@ -26,6 +30,7 @@ resetLikes = ()=>{
     render(){
 return(
     <div>
+        <Header  title='My Likes App'/>
         <h1>welcome to my likes app</h1>
         <h3>Likes: {this.state.likes}</h3>
         <button onClick={this.increaseLikes}>Like</button>
