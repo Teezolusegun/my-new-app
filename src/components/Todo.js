@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import TodoItems from './TodoItems';
+import Likes from './Likes'
 
 class Todo extends Component{
 
@@ -32,6 +33,7 @@ class Todo extends Component{
 
         return(
            <div> <Header title = 'MY TODO TITLE' />
+           
             <h1>Welcome to my todo App</h1>
             
             

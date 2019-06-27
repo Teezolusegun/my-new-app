@@ -30,6 +30,7 @@ resetLikes = ()=>{
     render(){
 return(
     <div>
+        <Header title='Another Header for likes' />
         <Header  title='My Likes App'/>
         <h1>welcome to my likes app</h1>
         <h3>Likes: {this.state.likes}</h3>
