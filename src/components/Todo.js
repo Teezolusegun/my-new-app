@@ -6,7 +6,7 @@ import Likes from './Likes'
 class Todo extends Component{
 
     state = {
-        todoItems : ['cook', 'eat','relax' ,  'code', 'facebook'],
+        todoItems : [],
         newTodo : ''
     }
 
@@ -14,20 +14,32 @@ class Todo extends Component{
         this.setState({newTodo : e.target.value})
     
     }
-    handleSubmit = (e)=>{
-        
-        this.setState( state =>{
-            const todoItems = this.state.todoItems.concat(state.newTodo);
-            return {
-                todoItems,
-                newTodo:'',
-                
+    handleSubmit = e=>{
+        e.preventDefault();
+        this.setState( prevState => {
+            return { 
+                todoItems: [...prevState.todoItems,this.state.newTodo],
+                newTodo: ''
             }
-           
-        })
-        console.log(this.state.todoItems)
-       e.preventDefault()
-       
+                }
+             )
+        
+    }
+
+    componentDidUpdate(prevProps, prevState){
+   if(prevState.todoItems.length !== this.state.todoItems.length){
+const jsonstate = JSON.stringify(this.state.todoItems)
+localStorage.setItem('todoItems',jsonstate)
+   }
+    }
+
+    componentDidMount(){
+        const itemsFromLocalStorage = localStorage.getItem('todoItems')
+        const todoItems = JSON.parse(itemsFromLocalStorage)
+        if(todoItems){ this.setState(()=>({
+            todoItems 
+        }))}
+        
     }
     render(){
 

@@ -10,6 +10,6 @@ import LocalStorage from './components/Localstorage';
 
 
 ReactDOM.render(
-  <LocalStorage />,
+  <Todo />,
   document.getElementById('root')
 );

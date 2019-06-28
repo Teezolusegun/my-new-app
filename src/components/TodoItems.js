@@ -4,8 +4,7 @@ const TodoItems = (props)=>{
 
     return(
         <div>
-       {props.individual}
-       <h4>with my guys</h4>
+       {props.individual} 
        </div>
     )
 }
