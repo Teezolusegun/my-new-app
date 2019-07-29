@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
 import './index.css';
-import Todo from './components/Todo';
-import TodoItems from './components/TodoItems'
-import  Lists from './Mypersonalfunction'
-import Likes from './components/Likes'
-import LocalStorage from './components/Localstorage';
+
+import TodoRouter from './routes/TodoRouter'
 
 
 ReactDOM.render(
-  <Todo />,
+  <TodoRouter />,
   document.getElementById('root')
 );
