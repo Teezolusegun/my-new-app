@@ -8,15 +8,15 @@
 }
 
 .removeButton {
-  background: #3E1929;
+  background:rgb(47, 53, 38);
   border: 0px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-transform: uppercase;
   color: white;
 }
 
 .removeButton:hover {
-  background: orange;
+  background: black;
   color: white;
 }

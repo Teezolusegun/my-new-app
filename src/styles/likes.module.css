@@ -1,0 +1,12 @@
+.likes{
+    background-color: rgb(158, 218, 198);
+    text-align: center;
+    height: 100%;
+}
+.likes button{
+    background-color: brown;
+    margin-left: 5px;
+    padding: 5px;
+    box-shadow: 0;
+    border-radius: 50%;
+}

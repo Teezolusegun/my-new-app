@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Header from "./Header";
+import todoStyles from "../styles/localstorage.module.css";
 
 class LocalStorage extends Component {
   render() {
     const person = {
-      name: "Nzekwe Samuel",
+      name: "Olusegun Emmanuel",
       age: "21"
     };
     const personToJson = JSON.stringify(person);
@@ -14,9 +15,9 @@ class LocalStorage extends Component {
     const getPerson = localStorage.getItem("newperson");
     const personParse = JSON.parse(getPerson);
     return (
-      <div>
+      <div className={todoStyles.info}>
         <Header title="Local Storage" />
-        <h3>
+        <h3 className={todoStyles.fo}>
           The stringified version is: <p>{getPerson}</p>
         </h3>
         <h4>

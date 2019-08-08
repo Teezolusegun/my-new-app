@@ -1,0 +1,21 @@
+.info{
+color: red;
+text-align: center;
+}
+
+.fo{
+    -webkit-animation: fadeinout 4s linear 9 forwards;
+    animation: fadeinout 4s linear 9 forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

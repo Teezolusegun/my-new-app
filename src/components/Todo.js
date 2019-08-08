@@ -69,7 +69,7 @@ class Todo extends Component {
     const { todoItems, newTodo } = this.state;
     return (
       <div className={todoStyles.container}>
-        <Header title="MY TASK CLOCK" />
+        <Header title="My Todo Task List" />
 
         <h1 className={todoStyles.title}>Welcome to my todo App</h1>
         <div className={todoStyles.wrapper}>

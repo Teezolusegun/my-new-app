@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Header from './Header';
+import todoStyles from "../styles/likes.module.css";
 
 
 
@@ -29,7 +30,7 @@ resetLikes = ()=>{
 
     render(){
 return(
-    <div>
+    <div  className={todoStyles.likes}>
       
         <Header  title='My Likes App'/>
         <h1>welcome to my likes app</h1>

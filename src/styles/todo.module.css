@@ -11,7 +11,7 @@
 
 .title {
   text-align: center;
-  background: #3E1929;
+  background: rgb(40, 75, 40);
   padding: 50px;
   margin-bottom: 30px;
   color: white;
@@ -26,7 +26,7 @@
 
 .forms input {
   font-family: roboto, sans-serif;
-  background: white;
+  background: rgb(171, 209, 171);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #3E1929;
@@ -50,7 +50,7 @@
   margin-top: 10px;
   font-family: robot, sans-serif;
   text-transform: uppercase;
-  background: #3E1929;
+  background: rgb(37, 49, 37);
   width: 216px;
   border: 0;
   color: white;
@@ -66,7 +66,7 @@
 }
 
 .removeAllButton:hover {
-  color: orange;
+  color: black;
 }
 
 .cover {

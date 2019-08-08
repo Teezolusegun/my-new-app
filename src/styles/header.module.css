@@ -1,5 +1,5 @@
 .headerContainer {
-  background: #1B1B1E;
+  background: rgb(39, 61, 39);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,6 @@
 }
 
 .headerContainer ul li a:hover {
-  color: darkorange;
+  color: black;
   font-size: 25px;
 }
