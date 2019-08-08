@@ -4,8 +4,8 @@ text-align: center;
 }
 
 .fo{
-    -webkit-animation: fadeinout 4s linear 9 forwards;
-    animation: fadeinout 4s linear 9 forwards;
+    -webkit-animation: fadeinout 4s linear 50 forwards;
+    animation: fadeinout 4s linear 50 forwards;
 }
 
 @-webkit-keyframes fadeinout {
