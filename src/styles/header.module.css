@@ -32,3 +32,33 @@
   color: black;
   font-size: 25px;
 }
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+    background-color: aqua;
+  }
+  .nav-links{
+  position: absolute;
+  right: 0px;
+  height: 92vh;
+    top: 4vh;
+    background: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.9s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-active{
+  transform: translateX(0%);
+}
